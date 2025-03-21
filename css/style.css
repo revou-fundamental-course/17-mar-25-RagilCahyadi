@@ -74,7 +74,7 @@ main{
 }
 
 section{
-    border: 1px solid blue;
+    border: 1px solid rgb(8, 109, 197);
     justify-self: center;
     margin: 24px;
     width: 50%;
