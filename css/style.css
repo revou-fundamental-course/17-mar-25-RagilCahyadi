@@ -1,0 +1,136 @@
+body{
+    font-family: Helvetica, Arial;
+    background-color: #DBE2EF;
+}
+
+.main-header{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 24px;
+    gap: 15px;
+    background-color: #205781;
+    border-radius: 5px;
+}
+
+.main-header > h1 , .main-header > p{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.main-header > p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+main{
+    margin-top: 20px;
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.nav-fitur{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-fitur > a {
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 50%;
+    background-color: #003cff;
+    align-self: center;
+    margin: 5px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.nav-fitur-active:hover, .nav-fitur-non-active:hover{
+    background-color: #25fd49;
+    color: black;
+}
+
+.section-header {
+    background-color: #66D2CE;
+    color: black;
+    padding: 24px;
+}
+
+.section-calculate {
+    text-align: left;
+    padding: 24px;
+}
+
+.section-calculate > #center {
+    text-align: center;
+}
+
+section{
+    border: 1px solid blue;
+    justify-self: center;
+    margin: 24px;
+    width: 50%;
+}
+
+
+.section-image > img {
+    width: 40%;
+    justify-self: center;
+}
+
+.section-calculate > #input-sisi{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.section-calculate > #button-calculate{
+    display: block;
+    margin: 20px auto;
+    background-color: #003cff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.section-calculate > #button-calculate:hover{
+    background-color: #25fd49;
+    color: black;
+}
+
+.section-calculate > #button-reset{
+    display: block;
+    margin: 20px;
+    justify-self:flex-end;
+    background-color: #ffbf00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.section-calculate > #button-reset:hover{
+    background-color: #ff0000;
+}
+
+footer {
+    text-align: center;
+}

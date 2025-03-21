@@ -9,18 +9,79 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-
+    <header class="main-header">
+        <h1>Kaltik</h1>
+        <p>Kalkulator Matematik</p>
     </header>
 
     <!-- Main Content -->
     <main>
+        <header>
+            <h1>Welcome to Kaltik</h1>
+        </header>
 
+        <p>Hai sobat selamat datang di Kaltik!</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+
+        <!-- Navigasi Fitur -->
+        <div class="nav-fitur">
+            <a href="" class="nav-fitur-active">Persegi</a>
+            <a href="" class="nav-fitur-non-active">Persegi Panjang</a>
+        </div>
+
+        <!-- Section Luas -->
+        <section>
+            <header class="section-header">
+                <h1>Luas Persegi</h1>
+            </header>
+
+            <div class="section-image">
+                <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
+            </div>
+            
+            <div class="section-calculate">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <p id="center"><b>L = S x S</b></p>
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+                <hr>
+                <h1 id="center">Hitung Luas Persegi</h1>
+                <input type="number" id="input-sisi" placeholder="Nilai Sisi">
+                <button id="button-calculate">Hitung</button>
+                <button id="button-reset">Reset</button>
+
+            </div>
+        </section>
+
+        <!-- Section Keliling -->
+         <section>
+            <header class="section-header">
+                <h1>Keliling Persegi</h1>
+            </header>
+
+            <div class="section-image">
+                <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
+            </div>
+            
+            <div class="section-calculate">
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <p id="center"><b>K = 4 x S</b></p>
+                <p>Di mana:</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+                <hr>
+                <h1 id="center">Hitung Keliling Persegi</h1>
+                <input type="number" id="input-sisi" placeholder="Nilai Sisi">
+                <button id="button-calculate">Hitung</button>
+                <button id="button-reset">Reset</button>
+            </div>
+         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        
+        <p>Made by Rahmansyah Ragil Cahyadi@2025</p>
     </footer>
 </body>
 </html>
