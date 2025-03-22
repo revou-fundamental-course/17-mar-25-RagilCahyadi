@@ -75,8 +75,7 @@ main{
 
 section{
     border: 1px solid rgb(8, 109, 197);
-    justify-self: center;
-    margin: 24px;
+    margin: 24px auto 24px;
     width: 50%;
 }
 
@@ -114,7 +113,7 @@ section{
 
 .section-calculate > #button-reset{
     display: block;
-    margin: 20px;
+    margin-left: auto;
     justify-self:flex-end;
     background-color: #ffbf00;
     color: black;
