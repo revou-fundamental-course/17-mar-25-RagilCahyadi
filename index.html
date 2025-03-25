@@ -25,64 +25,131 @@
 
         <!-- Navigasi Fitur -->
         <div class="nav-fitur">
-            <a href="" class="nav-fitur-persegi">Persegi</a>
-            <a href="" class="nav-fitur-persegi-panjang">Persegi Panjang</a>
+            <a href="#persegi" class="nav-fitur-persegi">Persegi</a>
+            <a href="#persegi-panjang" class="nav-fitur-persegi-panjang">Persegi Panjang</a>
         </div>
 
-        <!-- Section Luas -->
-        <section>
-            <header class="section-header">
-                <h1>Luas Persegi</h1>
-            </header>
-
-            <!-- Image Bangun Ruang -->
-            <div class="section-image">
-                <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
-            </div>
-            
-            <!-- Div Perhitungan -->
-            <div class="section-calculate">
-                <p>Rumus Luas Persegi yaitu:</p>
-                <p id="center"><b>L = S x S</b></p>
-                <p>Di mana:</p>
-                <p>L = Luas</p>
-                <p>S = Sisi</p>
-                <hr>
-                <h1 id="center">Hitung Luas Persegi</h1>
-                <input type="number" id="input-sisi-luas" placeholder="Nilai Sisi">
-                <p id="result-luas"></p>
-                <button id="button-calculate-luas">Hitung</button>
-                <button id="button-reset-luas">Reset</button>
-
-            </div>
+        <!-- Kalkulator Persegi -->
+        <section id="persegi">
+            <!-- Section Luas -->
+            <section class="content-perhitungan">
+                <header class="section-header">
+                    <h1>Luas Persegi</h1>
+                </header>
+    
+                <!-- Image Bangun Ruang -->
+                <div class="section-image">
+                    <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
+                </div>
+                
+                <!-- Div Perhitungan -->
+                <div class="section-calculate">
+                    <p>Rumus Luas Persegi yaitu:</p>
+                    <p id="center"><b>L = S x S</b></p>
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                    <hr>
+                    <h1 id="center">Hitung Luas Persegi</h1>
+                    <input type="number" id="input-sisi-luas-persegi" placeholder="Nilai Sisi">
+                    <p id="result-luas-persegi"></p>
+                    <button id="button-calculate-luas-persegi">Hitung</button>
+                    <button id="button-reset-luas-persegi">Reset</button>
+    
+                </div>
+            </section>
+    
+            <!-- Section Keliling -->
+             <section class="content-perhitungan">
+                <header class="section-header">
+                    <h1>Keliling Persegi</h1>
+                </header>
+    
+                <!-- Image Bangun Ruang -->
+                <div class="section-image">
+                    <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
+                </div>
+                
+                <!-- Div Perhitungan -->
+                <div class="section-calculate">
+                    <p>Rumus Keliling Persegi yaitu:</p>
+                    <p id="center"><b>K = 4 x S</b></p>
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                    <hr>
+                    <h1 id="center">Hitung Keliling Persegi</h1>
+                    <input type="number" id="input-sisi-keliling-persegi" placeholder="Nilai Sisi">
+                    <p id="result-keliling-persegi"></p>
+                    <button id="button-calculate-keliling-persegi">Hitung</button>
+                    <button id="button-reset-keliling-persegi">Reset</button>
+                </div>
+             </section>
+             <!-- End Content of Kalkulator Persegi -->
         </section>
 
-        <!-- Section Keliling -->
-         <section>
-            <header class="section-header">
-                <h1>Keliling Persegi</h1>
-            </header>
-
-            <!-- Image Bangun Ruang -->
-            <div class="section-image">
-                <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
-            </div>
-            
-            <!-- Div Perhitungan -->
-            <div class="section-calculate">
-                <p>Rumus Keliling Persegi yaitu:</p>
-                <p id="center"><b>K = 4 x S</b></p>
-                <p>Di mana:</p>
-                <p>K = Keliling</p>
-                <p>S = Sisi</p>
-                <hr>
-                <h1 id="center">Hitung Keliling Persegi</h1>
-                <input type="number" id="input-sisi-keliling" placeholder="Nilai Sisi">
-                <p id="result-keliling"></p>
-                <button id="button-calculate-keliling">Hitung</button>
-                <button id="button-reset-keliling">Reset</button>
-            </div>
-         </section>
+        <!-- Kalkulator Persegi Panjang -->
+        <section id="persegi-panjang">
+            <!-- Section Luas -->
+            <section class="content-perhitungan">
+                <header class="section-header">
+                    <h1>Luas Persegi Panjang</h1>
+                </header>
+    
+                <!-- Image Bangun Ruang -->
+                <div class="section-image">
+                    <img src="assets\persegi-panjang.jpg" alt="Persegi Panjang">
+                </div>
+                
+                <!-- Div Perhitungan -->
+                <div class="section-calculate">
+                    <p>Rumus Luas Persegi Panjang yaitu:</p>
+                    <p id="center"><b>L = p x l</b></p>
+                    <p>Di mana:</p>
+                    <p>L = Luas</p>
+                    <p>p = panjang</p>
+                    <p>l = lebar</p>
+                    <hr>
+                    <h1 id="center">Hitung Luas Persegi Panjang</h1>
+                    <input type="number" id="input-panjang-luas-persegi-panjang" placeholder="Nilai Panjang">
+                    <input type="number" id="input-lebar-luas-persegi-panjang" placeholder="Nilai lebar">
+                    <p id="result-luas-persegi-panjang"></p>
+                    <button id="button-calculate-luas-persegi-panjang">Hitung</button>
+                    <button id="button-reset-luas-persegi-panjang">Reset</button>
+    
+                </div>
+            </section>
+    
+            <!-- Section Keliling -->
+             <section class="content-perhitungan">
+                <header class="section-header">
+                    <h1>Keliling Persegi Panjang</h1>
+                </header>
+    
+                <!-- Image Bangun Ruang -->
+                <div class="section-image">
+                    <img src="assets\persegi-panjang.jpg" alt="Persegi Panjang">
+                </div>
+                
+                <!-- Div Perhitungan -->
+                <div class="section-calculate">
+                    <p>Rumus Keliling Persegi Panjang yaitu:</p>
+                    <p id="center"><b>K = 2 x (p + l)</b></p>
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>p = panjang</p>
+                    <p>l = lebar</p>
+                    <hr>
+                    <h1 id="center">Hitung Keliling Persegi Panjang</h1>
+                    <input type="number" id="input-panjang-keliling-persegi-panjang" placeholder="Nilai Panjang">
+                    <input type="number" id="input-lebar-keliling-persegi-panjang" placeholder="Nilai lebar">
+                    <p id="result-keliling-persegi-panjang"></p>
+                    <button id="button-calculate-keliling-persegi-panjang">Hitung</button>
+                    <button id="button-reset-keliling-persegi-panjang">Reset</button>
+                </div>
+             </section>
+             <!-- End Content Of Kalkulator Persegi Panjang -->
+        </section>
     </main>
 
     <!-- Footer -->
