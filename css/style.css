@@ -53,7 +53,7 @@ main{
 }
 
 
-.nav-fitur-active:hover, .nav-fitur-non-active:hover{
+.nav-fitur-persegi:hover, .nav-fitur-persegi-panjang:hover{
     background-color: #25fd49;
     color: black;
 }
@@ -85,14 +85,14 @@ section{
     justify-self: center;
 }
 
-.section-calculate > #input-sisi{
+.section-calculate > #input-sisi-luas, #input-sisi-keliling{
     width: 100%;
     height: 25px;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.section-calculate > #button-calculate{
+.section-calculate > #button-calculate-keliling, #button-calculate-luas{
     display: block;
     margin: 20px auto;
     background-color: #003cff;
@@ -106,12 +106,12 @@ section{
     transition-duration: 0.4s;
 }
 
-.section-calculate > #button-calculate:hover{
+.section-calculate > #button-calculate-keliling:hover, #button-calculate-luas:hover{
     background-color: #25fd49;
     color: black;
 }
 
-.section-calculate > #button-reset{
+.section-calculate > #button-reset-luas, #button-reset-keliling{
     display: block;
     margin-left: auto;
     justify-self:flex-end;
@@ -126,7 +126,7 @@ section{
     transition-duration: 0.4s;
 }
 
-.section-calculate > #button-reset:hover{
+.section-calculate > #button-reset-luas:hover, #button-reset-keliling:hover {
     background-color: #ff0000;
     color: white;
 }
