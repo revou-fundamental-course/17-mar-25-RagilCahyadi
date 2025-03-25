@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function(){
         resultKelilingPersegi.innerHTML = "";
     })
 
+    // ----------------------------------------------------------------------------------------------------------
+
     // Fungsi Kalkulator Persegi Panjang
 
     // Deklarasi Variabel Luas Persegi Panjang
@@ -76,8 +78,8 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // Fungsi button calculate luas Persegi Panjang
     buttonCalculateLuasPersegiPanjang.addEventListener("click", function(){
-        let lebarLuasPersegiPanjang = inputLebarLuasPersegiPanjang.value;
-        let panjangLuasPersegiPanjang = inputPanjangLuasPersegiPanjang.value;
+        let lebarLuasPersegiPanjang = parseFloat(inputLebarLuasPersegiPanjang.value);
+        let panjangLuasPersegiPanjang = parseFloat(inputPanjangLuasPersegiPanjang.value);
 
         if(lebarLuasPersegiPanjang <= 0 || isNaN(lebarLuasPersegiPanjang) || 
         panjangLuasPersegiPanjang <=0 || isNaN(panjangLuasPersegiPanjang)){
@@ -103,8 +105,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Fungsi button calculate Keliling Persegi Panjang
     buttonCalculateKelilingPersegiPanjang.addEventListener("click", function(){
-        let lebarKelilingPersegiPanjang = inputLebarKelilingPersegiPanjang.value;
-        let panjangKelilingPersegiPanjang = inputPanjangKelilingPersegiPanjang.value;
+        let lebarKelilingPersegiPanjang = parseFloat(inputLebarKelilingPersegiPanjang.value);
+        let panjangKelilingPersegiPanjang = parseFloat(inputPanjangKelilingPersegiPanjang.value);
         if(lebarKelilingPersegiPanjang <= 0 || isNaN(lebarKelilingPersegiPanjang) ||
         panjangKelilingPersegiPanjang <= 0 || isNaN(panjangKelilingPersegiPanjang)){
             alert("Input yang diberikan tidak valid !!");
@@ -116,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let hasilKelilingPersegiPanjang = 2 * (panjangKelilingPersegiPanjang + lebarKelilingPersegiPanjang);
         resultKelilingPersegiPanjang.innerHTML = `
         K = 2 x (p + l)<br>
-        K = 2 x ${panjangKelilingPersegiPanjang} + ${lebarKelilingPersegiPanjang}<br>
+        K = 2 x (${panjangKelilingPersegiPanjang} + ${lebarKelilingPersegiPanjang})<br>
         K = ${hasilKelilingPersegiPanjang}`;
     })
 
