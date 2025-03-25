@@ -73,7 +73,7 @@ main{
     text-align: center;
 }
 
-section{
+.content-perhitungan{
     border: 1px solid rgb(8, 109, 197);
     margin: 24px auto 24px;
     width: 50%;
@@ -85,14 +85,20 @@ section{
     justify-self: center;
 }
 
-.section-calculate > #input-sisi-luas, #input-sisi-keliling{
+.section-calculate > 
+#input-sisi-luas-persegi, #input-sisi-keliling-persegi, 
+#input-panjang-luas-persegi-panjang, #input-lebar-luas-persegi-panjang,
+#input-panjang-keliling-persegi-panjang, #input-lebar-keliling-persegi-panjang {
+    margin-top: 10px;
     width: 100%;
     height: 25px;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.section-calculate > #button-calculate-keliling, #button-calculate-luas{
+.section-calculate > 
+#button-calculate-keliling-persegi, #button-calculate-luas-persegi,
+#button-calculate-keliling-persegi-panjang, #button-calculate-luas-persegi-panjang{
     display: block;
     margin: 20px auto;
     background-color: #003cff;
@@ -106,12 +112,16 @@ section{
     transition-duration: 0.4s;
 }
 
-.section-calculate > #button-calculate-keliling:hover, #button-calculate-luas:hover{
+.section-calculate > 
+#button-calculate-keliling-persegi:hover, #button-calculate-luas-persegi:hover,
+#button-calculate-keliling-persegi-panjang:hover, #button-calculate-luas-persegi-panjang:hover{
     background-color: #25fd49;
     color: black;
 }
 
-.section-calculate > #button-reset-luas, #button-reset-keliling{
+.section-calculate > 
+#button-reset-luas-persegi, #button-reset-keliling-persegi,
+#button-reset-luas-persegi-panjang, #button-reset-keliling-persegi-panjang{
     display: block;
     margin-left: auto;
     justify-self:flex-end;
@@ -126,7 +136,9 @@ section{
     transition-duration: 0.4s;
 }
 
-.section-calculate > #button-reset-luas:hover, #button-reset-keliling:hover {
+.section-calculate > 
+#button-reset-luas-persegi:hover , #button-reset-keliling-persegi:hover ,
+#button-reset-luas-persegi-panjang:hover , #button-reset-keliling-persegi-panjang:hover {
     background-color: #ff0000;
     color: white;
 }
