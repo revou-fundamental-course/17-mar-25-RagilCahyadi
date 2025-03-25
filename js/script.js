@@ -15,17 +15,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Fungsi button perhitungan luas persegi
     buttonCalculateLuasPersegi.addEventListener("click", function(){
-        let sisiPersegi = parseFloat(inputSisiLuasPersegi.value);
-        if(sisiPersegi <= 0 || isNaN(sisiPersegi)){
+        let sisiLuasPersegi = parseFloat(inputSisiLuasPersegi.value);
+        if(sisiLuasPersegi <= 0 || isNaN(sisiLuasPersegi)){
             alert("Input yang diberikan tidak valid !!");
             resultLuasPersegi.innerHTML= `<span style="color:red;">Masukkan nilai sisi yang valid!!</span>`;
             return;
         }
         // Rumus Luas Persegi
-        let hasilLuasPersegi = sisiPersegi * 2
+        let hasilLuasPersegi = sisiLuasPersegi * sisiLuasPersegi
         resultLuasPersegi.innerHTML =`
         L = S x S<br>
-        L = ${sisiPersegi} x ${sisiPersegi}<br>
+        L = ${sisiLuasPersegi} x ${sisiLuasPersegi}<br>
         L = ${hasilLuasPersegi}`;
     })
 
