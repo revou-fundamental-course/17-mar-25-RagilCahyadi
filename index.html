@@ -25,8 +25,8 @@
 
         <!-- Navigasi Fitur -->
         <div class="nav-fitur">
-            <a href="" class="nav-fitur-active">Persegi</a>
-            <a href="" class="nav-fitur-non-active">Persegi Panjang</a>
+            <a href="" class="nav-fitur-persegi">Persegi</a>
+            <a href="" class="nav-fitur-persegi-panjang">Persegi Panjang</a>
         </div>
 
         <!-- Section Luas -->
@@ -35,10 +35,12 @@
                 <h1>Luas Persegi</h1>
             </header>
 
+            <!-- Image Bangun Ruang -->
             <div class="section-image">
                 <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
             </div>
             
+            <!-- Div Perhitungan -->
             <div class="section-calculate">
                 <p>Rumus Luas Persegi yaitu:</p>
                 <p id="center"><b>L = S x S</b></p>
@@ -47,9 +49,10 @@
                 <p>S = Sisi</p>
                 <hr>
                 <h1 id="center">Hitung Luas Persegi</h1>
-                <input type="number" id="input-sisi" placeholder="Nilai Sisi">
-                <button id="button-calculate">Hitung</button>
-                <button id="button-reset">Reset</button>
+                <input type="number" id="input-sisi-luas" placeholder="Nilai Sisi">
+                <p id="result-luas"></p>
+                <button id="button-calculate-luas">Hitung</button>
+                <button id="button-reset-luas">Reset</button>
 
             </div>
         </section>
@@ -60,10 +63,12 @@
                 <h1>Keliling Persegi</h1>
             </header>
 
+            <!-- Image Bangun Ruang -->
             <div class="section-image">
                 <img src="assets\persegi-bangun-datar.jpg" alt="Persegi">
             </div>
             
+            <!-- Div Perhitungan -->
             <div class="section-calculate">
                 <p>Rumus Keliling Persegi yaitu:</p>
                 <p id="center"><b>K = 4 x S</b></p>
@@ -72,9 +77,10 @@
                 <p>S = Sisi</p>
                 <hr>
                 <h1 id="center">Hitung Keliling Persegi</h1>
-                <input type="number" id="input-sisi" placeholder="Nilai Sisi">
-                <button id="button-calculate">Hitung</button>
-                <button id="button-reset">Reset</button>
+                <input type="number" id="input-sisi-keliling" placeholder="Nilai Sisi">
+                <p id="result-keliling"></p>
+                <button id="button-calculate-keliling">Hitung</button>
+                <button id="button-reset-keliling">Reset</button>
             </div>
          </section>
     </main>
@@ -83,5 +89,8 @@
     <footer>
         <p>Made by Rahmansyah Ragil Cahyadi@2025</p>
     </footer>
+
+    <!-- Javascript External -->
+     <script src="js/script.js"></script>
 </body>
 </html>
